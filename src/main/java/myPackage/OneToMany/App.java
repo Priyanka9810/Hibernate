@@ -45,7 +45,7 @@ public class App {
 				String c_id= sc.next();				
 				System.out.println("Enter the Name of Subject "+(j+1)+" for Department "+(i+1)+":");
 				String c_name= sc.next();
-				System.out.println("Enter the Credit for the Subject "+(i+1)+":");
+				System.out.println("Enter the Credit for the Subject "+(j+1)+":");
 				int credit= sc.nextInt();				
 				List<Cource_Info> c1 = Arrays.asList(new Cource_Info(c_id,s_name,c_name,credit));
 				dept1.setCource_name(c1);
@@ -67,7 +67,7 @@ public class App {
 		}
 		
 		//fetching data from student table
-		System.out.println("Display the Student Table :");
+		System.out.println("Display the Cource Table :");
 		Query qr1 = session.createQuery("select o from Cource_info o",Cource_Info.class);
 		List<Cource_Info> c_details = (List<Cource_Info>) qr1.getResultList();
 		System.out.println("Cource ID\tCource Name\tDepartment Name\tCredits");

@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Cource_Info {
 	@Id
 	@ManyToOne
-    @JoinColumn(name="Department_Id", nullable=false)
+    @JoinColumn(name="id")
 //	@Column(name = "Cource_Id")
 	private String id;
 	private String department;
