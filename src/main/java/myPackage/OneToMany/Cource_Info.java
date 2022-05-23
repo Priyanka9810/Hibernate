@@ -1,6 +1,6 @@
 package myPackage.OneToMany;
 
-//import javax.persistence.Column;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -11,9 +11,9 @@ import javax.persistence.Table;
 @Entity
 public class Cource_Info {
 	@Id
-	@ManyToOne
+//	@ManyToOne
     @JoinColumn(name="id")
-//	@Column(name = "Cource_Id")
+	@Column(name = "Cource_Id")
 	private String id;
 	private String department;
 	private String cource_name;

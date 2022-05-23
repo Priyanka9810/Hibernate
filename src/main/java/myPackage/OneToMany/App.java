@@ -29,6 +29,7 @@ public class App {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("How many Departments you want to enter: ");
 		int s_no = sc.nextInt();
+		
 		for(int i=0; i<s_no ; i++) {
 //			System.out.println("Enter ID for Student "+(i+1)+":");
 //			int id= sc.nextInt();
